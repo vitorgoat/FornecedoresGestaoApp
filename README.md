@@ -52,17 +52,17 @@ USE fornecedoresdb;
 
 CREATE TABLE IF NOT EXISTS fornecedores (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    razao_social VARCHAR(255) NOT NULL,
+    razao_social VARCHAR(100) NOT NULL,
     cnpj VARCHAR(20) NOT NULL UNIQUE,
-    logradouro VARCHAR(255) NOT NULL,
+    logradouro VARCHAR(100) NOT NULL,
     numero VARCHAR(20) NOT NULL,
     bairro VARCHAR(100) NOT NULL,
     cidade VARCHAR(100) NOT NULL,
     estado VARCHAR(2) NOT NULL,
     cep VARCHAR(10) NOT NULL,
-    telefone VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    nome_responsavel VARCHAR(255) NOT NULL
+    telefone VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    nome_responsavel VARCHAR(100) NOT NULL
 );
 ```
 
